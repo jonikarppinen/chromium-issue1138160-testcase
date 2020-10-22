@@ -6,7 +6,9 @@ Minimal Android project demonstrating this bug: https://bugs.chromium.org/p/chro
 
 1. Clone the repo and open it in Android Studio
 2. Hit "Play" to launch the test app on a connected physical device
-3. Click on "Crash test case" button and behold the app crashing, if the device has one of the affected Chrome version.
+3. Click on "Crash test case" button and behold the app crashing, if the device has one of the affected Chrome versions.
+
+See **[MainActivity.kt](app/src/main/java/fi/iki/jonik/issue1138160/MainActivity.kt)** where all the code is.
 
 ## The issue
 
