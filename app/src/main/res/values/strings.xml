@@ -1,3 +1,13 @@
 <resources>
+
     <string name="app_name">Issue 1138160 test case</string>
+
+    <string name="crashing_code"><![CDATA[val intent = Intent(Intent.ACTION_VIEW)
+intent.setDataAndType(Uri.parse(url), \"text/html\")
+intent.addCategory(Intent.CATEGORY_BROWSABLE)
+startActivity(intent)]]></string>
+    <string name="working_code"><![CDATA[val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+intent.addCategory(Intent.CATEGORY_BROWSABLE)
+startActivity(intent)]]></string>
+
 </resources>

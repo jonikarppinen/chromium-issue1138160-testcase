@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context=".MainActivity"
-    tools:ignore="HardcodedText"
+    tools:ignore="HardcodedText, SmallSp"
     android:orientation="vertical"
-    >
-
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
 
     <Button
         android:id="@+id/crash_button"
@@ -21,7 +20,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Koodia tähän"
+        android:text="@string/crashing_code"
+        android:textSize="10sp"
+        android:typeface="monospace"
          />
 
 
@@ -36,7 +37,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Koodia tähänkin"
+        android:text="@string/working_code"
+        android:textSize="10sp"
+        android:typeface="monospace"
         />
 
 
